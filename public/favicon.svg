@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#38bdf8" flood-opacity="0.8" />
+    </filter>
+  </defs>
+
+  <!-- Modern Tech Container -->
+  <rect width="64" height="64" rx="16" fill="#07080B" stroke="url(#webGrad)" stroke-width="2.5" />
+
+  <!-- Background subtle grid line -->
+  <line x1="8" y1="20" x2="56" y2="20" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+  <circle cx="16" cy="14" r="2" fill="#38bdf8" opacity="0.8" />
+  <circle cx="22" cy="14" r="2" fill="#818cf8" opacity="0.8" />
+  <circle cx="28" cy="14" r="2" fill="#34d399" opacity="0.8" />
+
+  <!-- Web Code Brackets </ > with Glow -->
+  <path d="M22 27 L13 38 L22 49" stroke="url(#webGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)" />
+  <path d="M42 27 L51 38 L42 49" stroke="url(#webGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)" />
+  <path d="M35 25 L29 51" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" filter="url(#neonGlow)" />
+</svg>
