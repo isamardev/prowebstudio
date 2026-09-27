@@ -63,14 +63,14 @@ export const MarqueeShowcase: React.FC<MarqueeShowcaseProps> = ({ onSelectItem }
           </p>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 bg-white/5 border border-white/10 p-1 rounded-xl">
+        {/* Filter Tabs - Native Mobile Horizontal Swipe */}
+        <div className="flex items-center gap-1.5 sm:gap-2 bg-white/5 border border-white/10 p-1.5 rounded-xl overflow-x-auto no-scrollbar w-full sm:w-auto max-w-full">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               type="button"
-              className={`px-3 py-1.5 text-xs rounded-lg font-medium transition-all cursor-pointer ${
+              className={`px-3 py-1.5 text-xs rounded-lg font-medium transition-all shrink-0 whitespace-nowrap cursor-pointer active:scale-95 ${
                 selectedCategory === cat
                   ? 'bg-white text-[#0C0C0C] font-semibold shadow-sm'
                   : 'text-white/70 hover:text-white hover:bg-white/10'

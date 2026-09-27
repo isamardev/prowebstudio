@@ -13,14 +13,17 @@
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
+  overflow-x: clip;
 }
 
 body {
   background-color: #0C0C0C;
   color: #D7E2EA;
   font-family: var(--font-kanit), 'Kanit', sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 .font-kanit { font-family: var(--font-kanit), 'Kanit', sans-serif; }

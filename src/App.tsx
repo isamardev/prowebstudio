@@ -43,7 +43,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0C0C0C] text-[#D7E2EA] flex flex-col relative overflow-x-clip selection:bg-[#38bdf8] selection:text-black">
+    <div className="min-h-screen bg-[#0C0C0C] text-[#D7E2EA] flex flex-col relative selection:bg-[#38bdf8] selection:text-black pb-20 md:pb-0">
       {/* 3-Zone Navigation Header */}
       <Navbar onOpenContact={handleOpenContact} />
 
